@@ -72,10 +72,20 @@
         mk_mm: magic_key_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "Mod morph behavior for magic key";
-            bindings = <&mk_lt 1 LSHFT>, <&caps_word>;
+            bindings = <&mk_lt 1 LSHFT>, <&mk_cw_mt LSHFT 0>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mk_cw_mt: magic_key_caps_word_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Allows tap and holding magic key for shift";
+            bindings = <&kp>, <&caps_word>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
         };
     };
 
