@@ -76,6 +76,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         mk_cw_mt: magic_key_caps_word_mod_tap {
