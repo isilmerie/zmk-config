@@ -120,7 +120,7 @@
         sym_layer {
             bindings = <
         &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans     &trans    &trans
-        &trans  &trans  &kp LPAR  &kp RPAR  &trans    &trans  &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI
+        &trans  &trans  &kp LPAR  &kp RPAR  &trans    &trans  &sk LCTRL  &sk LSHFT  &sk LALT  &sk LGUI
 &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans     &trans    &trans    &trans
                         &trans    &trans    &trans    &trans  &trans     &trans
             >;
@@ -131,7 +131,7 @@
         num_layer {
             bindings = <
         &trans    &trans    &trans     &trans     &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
-        &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans
+        &sk LGUI  &sk LALT  &sk LSHFT  &sk LCTRL  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans
 &trans  &trans    &trans    &trans     &trans     &trans    &kp N0  &kp N1  &kp N2  &kp N3  &trans  &trans
                             &trans     &trans     &trans    &trans  &trans  &trans
             >;
@@ -142,7 +142,7 @@
         nav_layer {
             bindings = <
         &trans  &trans    &kp UP    &trans     &trans    &trans  &trans     &trans     &trans    &trans
-        &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &trans  &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI
+        &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &trans  &sk LCTRL  &sk LSHFT  &sk LALT  &sk LGUI
 &trans  &trans  &trans    &trans    &trans     &trans    &trans  &trans     &trans     &trans    &trans    &trans
                           &trans    &trans     &trans    &trans  &trans     &trans
             >;
@@ -153,7 +153,7 @@
         mouse_layer {
             bindings = <
         &trans    &trans     &trans     &trans     &trans      &msc SCRL_LEFT  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT
-        &kp LGUI  &kp LALT   &kp LSHFT  &kp LCTRL  &trans      &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+        &sk LGUI  &sk LALT   &sk LSHFT  &sk LCTRL  &trans      &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
 &trans  &mkp MB4  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp MB5    &trans          &trans          &trans          &trans           &trans           &trans
                              &trans     &trans     &trans      &trans          &trans          &trans
             >;
@@ -164,7 +164,7 @@
         tool_layer {
             bindings = <
         &trans                &trans                &trans        &trans        &trans           &trans  &trans     &trans     &trans    &trans
-        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE       &trans  &kp LCTRL  &kp LSHFT  &kp LALT  &kp LGUI
+        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE       &trans  &sk LCTRL  &sk LSHFT  &sk LALT  &sk LGUI
 &trans  &kp LC(Z)             &kp LC(X)             &kp LC(C)     &kp LC(V)     &kp LS(LC(Z))    &trans  &trans     &trans     &trans    &trans    &trans
                                                     &trans        &trans        &trans           &trans  &trans     &trans
             >;
@@ -175,7 +175,7 @@
         system_layer {
             bindings = <
         &trans    &trans    &bootloader  &sys_reset  &trans    &trans  &sys_reset  &bootloader  &out OUT_BLE  &out OUT_USB
-        &kp LGUI  &kp LALT  &kp LSHFT    &kp LCTRL   &trans    &trans  &bt BT_PRV  &bt BT_NXT   &bt BT_CLR    &bt BT_CLR_ALL
+        &sk LGUI  &sk LALT  &sk LSHFT    &sk LCTRL   &trans    &trans  &bt BT_PRV  &bt BT_NXT   &bt BT_CLR    &bt BT_CLR_ALL
 &trans  &trans    &trans    &trans       &trans      &trans    &trans  &trans      &trans       &trans        &trans          &trans
                             &trans       &trans      &trans    &trans  &trans      &trans
             >;
